@@ -1,3 +1,5 @@
 node_modules
 memo.txt
 .env.local
+.next
+gettoken.mjs

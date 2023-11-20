@@ -1,6 +1,10 @@
 import { AiFillStar } from "react-icons/ai";
 
-export const SkillCard = (props: { path: string; level: number }) => {
+export const SkillCard = (props: {
+  path: string;
+  level: number;
+  notes: string;
+}) => {
   let colorList = [];
   for (let i = 1; i < 6; i++) {
     if (i <= props.level) {
@@ -10,10 +14,11 @@ export const SkillCard = (props: { path: string; level: number }) => {
     }
   }
   return (
-    <div>
-      <div className="w-20 h-20 rounded-full bg-slate-100 border-dashed border-2 border-slate-200 p-2 overflow-hidden">
+    <div className="relative">
+      <div className="w-20 h-20 rounded-full bg-slate-100 border-dashed border-2 border-slate-200 p-2 overflow-hidden div-mouseover ">
         <img src={props.path} className="" alt="" />
       </div>
+      <div className="mouseover__img absolute">{props.notes}</div>
       <div className="flex justify-between">
         <AiFillStar size={"1rem"} className={colorList[0]} />
         <AiFillStar size={"1rem"} className={colorList[1]} />

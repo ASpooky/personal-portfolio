@@ -4,39 +4,75 @@ type skill = {
   path: string;
   level: number;
   name: string;
+  notes: string;
 };
 
 const languages: skill[] = [
-  { path: "python-icon.png", level: 4, name: "Python" },
-  { path: "golang-icon.png", level: 3, name: "Golang" },
-  { path: "typescript-icon.png", level: 2, name: "TypeScript" },
-  { path: "JavaScript-icon.png", level: 2, name: "JavaScript" },
-  { path: "html-icon.png", level: 2, name: "HTML" },
-  { path: "css-icon.png", level: 2, name: "CSS" },
+  {
+    path: "python-icon.png",
+    level: 4,
+    name: "Python",
+    notes: "研究や講義,個人開発(バックエンド)",
+  },
+  {
+    path: "golang-icon.png",
+    level: 3,
+    name: "Golang",
+    notes: "個人開発(バックエンド)",
+  },
+  {
+    path: "typescript-icon.png",
+    level: 2,
+    name: "TypeScript",
+    notes: "個人開発(フロントエンド)",
+  },
+  {
+    path: "JavaScript-icon.png",
+    level: 2,
+    name: "JavaScript",
+    notes: "講義や個人開発(フロントエンド)",
+  },
+  {
+    path: "html-icon.png",
+    level: 2,
+    name: "HTML",
+    notes: "講義や個人開発",
+  },
+  {
+    path: "css-icon.png",
+    level: 2,
+    name: "CSS",
+    notes: "講義や個人開発",
+  },
 ];
 
 const frameworks: skill[] = [
-  { path: "tailwind-icon.png", level: 3, name: "Tailwind" },
-  { path: "nextjs-icon.png", level: 3, name: "Next.js" },
-  { path: "echo-icon.png", level: 2, name: "echo" },
-  { path: "pytorch-icon.png", level: 2, name: "Pytorch" },
-  { path: "django-icon.png", level: 1, name: "Django" },
+  { path: "tailwind-icon.png", level: 3, name: "Tailwind", notes: "個人開発" },
+  { path: "nextjs-icon.png", level: 3, name: "Next.js", notes: "個人開発" },
+  { path: "echo-icon.png", level: 2, name: "echo", notes: "個人開発" },
+  { path: "pytorch-icon.png", level: 2, name: "Pytorch", notes: "研究" },
+  { path: "django-icon.png", level: 1, name: "Django", notes: "個人開発" },
 ];
 
 const others: skill[] = [
-  { path: "docker-icon.png", level: 2, name: "Docker" },
-  { path: "mysql-icon.png", level: 1, name: "Mysql" },
-  { path: "Postgresql-icon.png", level: 1, name: "Postgresql" },
+  { path: "docker-icon.png", level: 2, name: "Docker", notes: "個人開発" },
+  { path: "mysql-icon.png", level: 1, name: "Mysql", notes: "個人開発" },
+  {
+    path: "Postgresql-icon.png",
+    level: 1,
+    name: "Postgresql",
+    notes: "個人開発",
+  },
 ];
 
 export const SkillChart = () => {
   return (
     <div className="flex flex-col justify-center items-center pt-20">
-      <div>SkillChart</div>
+      <h3 className="py-8">SkillChart</h3>
       <div className="grid lg:grid-cols-2 gap-9">
         <div className="flex flex-col justify-center items-center p-5">
-          <div>Languages</div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="pb-5">Languages</div>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
             {languages.map((language) => {
               return (
                 <div
@@ -49,6 +85,7 @@ export const SkillChart = () => {
                       path={"languages/" + language.path}
                       level={language.level}
                       key={language.path}
+                      notes={language.notes}
                     />
                   </div>
                 </div>
@@ -57,8 +94,8 @@ export const SkillChart = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center p-5">
-          <div>FrameWroks</div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="pb-5">FrameWroks</div>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
             {frameworks.map((framework) => {
               return (
                 <div
@@ -71,6 +108,7 @@ export const SkillChart = () => {
                       path={"frameworks/" + framework.path}
                       level={framework.level}
                       key={framework.path}
+                      notes={framework.notes}
                     />
                   </div>
                 </div>
@@ -79,8 +117,8 @@ export const SkillChart = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center p-5">
-          <div>Others</div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="pb-5">Others</div>
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
             {others.map((other) => {
               return (
                 <div
@@ -93,6 +131,7 @@ export const SkillChart = () => {
                       path={"others/" + other.path}
                       level={other.level}
                       key={other.path}
+                      notes={other.notes}
                     />
                   </div>
                 </div>

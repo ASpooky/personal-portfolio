@@ -68,7 +68,7 @@ export const GitChart = () => {
   if (loading) {
     return (
       <>
-        <div>GitChart</div>
+        <h3 className="py-8">GitChart</h3>
         <div className="w-2/3 h-64 border-2 border-dashed border-slate-200 flex justify-center items-center">
           読み込み中
         </div>
@@ -78,7 +78,7 @@ export const GitChart = () => {
   if (error) {
     return (
       <>
-        <div>GitChart</div>
+        <h3 className="py-8">GitChart</h3>
         <div className="w-2/3 h-64 border-2 border-dashed border-slate-200 flex justify-center items-center">
           読み込み失敗
         </div>
@@ -99,7 +99,7 @@ export const GitChart = () => {
 
   return (
     <>
-      <div>GitChart</div>
+      <h3 className="py-8">GitChart</h3>
       <div className="grid grid-rows-7 grid-flow-col gap-2 overflow-x-auto p-1 w-2/3">
         {weeks.slice(20).map((week: any) => {
           return week.contributionDays.map((day: any) => {
