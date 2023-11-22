@@ -6,7 +6,7 @@ import WithApollo from "./component/WithApollo";
 
 const Home = async () => {
   return (
-    <main className="flex flex-col justify-center items-center min-h-screen">
+    <main className="flex flex-col justify-center items-center min-h-screen gap-16 pb-40">
       <Career />
       <WithApollo>
         <GitChart />

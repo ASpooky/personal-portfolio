@@ -5,7 +5,7 @@ export const CareerCard = (props: {
 }) => {
   return (
     <div className="flex py-1">
-      <div className="flex flex-col justify-center items-center mr-10">
+      <div className="flex flex-col justify-center items-center mr-7">
         <div className="p-1 rounded-full bg-teal-300"></div>
         <div className="h-full w-1 rounded-lg bg-slate-200 relative mt-1"></div>
         <svg

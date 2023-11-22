@@ -1,4 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
+import Image from "next/image";
 
 export const SkillCard = (props: {
   path: string;
@@ -16,7 +17,14 @@ export const SkillCard = (props: {
   return (
     <div className="relative">
       <div className="w-20 h-20 rounded-full bg-slate-100 border-dashed border-2 border-slate-200 p-2 overflow-hidden div-mouseover ">
-        <img src={props.path} className="" alt="" />
+        <Image
+          src={"/" + props.path}
+          alt={""}
+          width={500}
+          height={500}
+          className="flex-1 h-auto object-cover"
+          priority={true}
+        ></Image>
       </div>
       <div className="mouseover__img absolute">{props.notes}</div>
       <div className="flex justify-between">

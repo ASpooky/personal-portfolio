@@ -31,7 +31,7 @@ export const Career = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="bg-slate-100"></div>
-      <h3 className="py-8">Profile</h3>
+      <h3 className="pt-8 pb-5 text-lg">Profile</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="p-5 w-96 ml-1">
           <img src="myPhoto.png" alt="" />

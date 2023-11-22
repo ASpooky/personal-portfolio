@@ -67,8 +67,14 @@ const others: skill[] = [
 
 export const SkillChart = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-20">
-      <h3 className="py-8">SkillChart</h3>
+    <div className="flex flex-col justify-center items-center pt-7">
+      <h3 className="pt-8 pb-7 text-lg">
+        SkillChart
+        <span className="absolute p-6 underline underline-offset-2 text-sm">
+          ※自己採点のため参考までに
+        </span>
+      </h3>
+
       <div className="grid lg:grid-cols-2 gap-9">
         <div className="flex flex-col justify-center items-center p-5">
           <div className="pb-5">Languages</div>
