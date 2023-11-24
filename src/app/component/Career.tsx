@@ -39,16 +39,18 @@ export const Career = () => {
         </div>
         <div className="flex flex-col justify-center items-center mr-4">
           <h3 className="py-8">Career</h3>
-          {carees.map((item) => {
-            return (
-              <CareerCard
-                year={item.year}
-                body={item.body}
-                key={item.year}
-                color={item.color}
-              />
-            );
-          })}
+          <div className="mx-4">
+            {carees.map((item) => {
+              return (
+                <CareerCard
+                  year={item.year}
+                  body={item.body}
+                  key={item.year}
+                  color={item.color}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
