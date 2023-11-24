@@ -39,7 +39,7 @@ export const Career = () => {
         </div>
         <div className="flex flex-col justify-center items-center mr-4">
           <h3 className="py-8">Career</h3>
-          <div className="mx-4">
+          <div className="">
             {carees.map((item) => {
               return (
                 <CareerCard
