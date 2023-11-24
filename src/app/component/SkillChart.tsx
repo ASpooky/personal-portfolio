@@ -70,8 +70,8 @@ export const SkillChart = () => {
     <div className="flex flex-col justify-center items-center pt-7">
       <h3 className="pt-8 pb-7 text-lg">
         SkillChart
-        <span className="absolute p-6 underline underline-offset-2 text-sm">
-          ※自己採点のため参考までに
+        <span className="absolute pl-11 pt-3 underline underline-offset-2 text-sm text-slate-500">
+          ※自己採点
         </span>
       </h3>
 
