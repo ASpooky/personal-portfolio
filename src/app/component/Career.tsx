@@ -34,7 +34,7 @@ export const Career = () => {
       <h3 className="pt-8 pb-5 text-lg">Profile</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="p-5 w-96 ml-1">
-          <img src="myPhoto.png" alt="" className="shadow-md rounded-md" />
+          <img src="myPhoto.jpg" alt="" className="shadow-md rounded-md" />
           <p className="pt-3">※自身の画像をもとに生成しました</p>
         </div>
         <div className="flex flex-col justify-center items-center mr-4">
