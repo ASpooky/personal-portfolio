@@ -35,7 +35,7 @@ export const Career = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div className="p-5 w-96 ml-1">
           <img src="myPhoto.jpg" alt="" className="shadow-md rounded-md" />
-          <p className="pt-3">※自身の画像をもとに生成しました</p>
+          <p className="pt-3"></p>
         </div>
         <div className="flex flex-col justify-center items-center mr-4">
           <h3 className="py-8">Career</h3>
